@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual Environment
+venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Environment
+.env
+.env.*
+
+# Data
+/data/raw/*
+/data/processed/*
+/data/evaluation/*
+!data/processed/extracted_text.txt
+!data/processed/merged_chunks_metadata.json
+!data/processed/images/
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Misc
+*.bak
+*.tmp
