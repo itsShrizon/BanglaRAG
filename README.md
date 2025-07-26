@@ -136,7 +136,7 @@ This script creates an advanced conversational AI system (a RAG pipeline) that a
   - AstraDB: Another vector database for searching text.
 - **Short-Term Memory:** Maintains a chat history. When you ask a follow-up question (e.g., "What was his age?"), it first uses Gemini to rephrase it into a complete, standalone question (e.g., "What was Shambhunath Babu's age?"). This makes the search much more accurate.
 - **Hybrid Retrieval:** Takes the standalone question and searches for relevant context in both Pinecone and AstraDB simultaneously. Combines the results and removes any duplicate information to create a rich, comprehensive context.
-- **Answer Generation:** Sends the retrieved context, the original question, and the chat history to the powerful Gemini 1.5 Pro model. It instructs the model to act like a literary analyst and answer the question based only on the provided information.
+- **Answer Generation:** Sends the retrieved context, the original question, and the chat history to the powerful Gemini 2.5 Pro model. It instructs the model to act like a literary analyst and answer the question based only on the provided information.
 
 In short, it's a sophisticated chatbot that remembers your conversation and pulls information from two separate databases to provide the most accurate possible answer.
 
@@ -168,13 +168,6 @@ In short, it's a sophisticated chatbot that remembers your conversation and pull
 - Uses chat history and Gemini to rewrite vague queries into standalone, context-rich questions before searching.
 - Ensures accurate retrieval even for conversational or ambiguous questions.
 
----
-
-## Evaluation Matrix (if implemented)
-
-If evaluation is implemented, results and metrics (e.g., accuracy, F1-score, context relevance) will be found in `data/evaluation/` or described here.
-
----
 
 ## Relevance of Results and Improvements
 
